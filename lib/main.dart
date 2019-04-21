@@ -3,10 +3,7 @@ import 'package:flutter/material.dart';
 //自定义的dart
 import 'package:flutter_nice/common/color_constant.dart';
 import 'package:flutter_nice/app.dart';
-import 'package:flutter_nice/weixin.dart';
-import 'package:flutter_nice/find.dart';
-import 'package:flutter_nice/friend.dart';
-import 'package:flutter_nice/mine.dart';
+
 
 void main() => runApp(new App());
 
@@ -28,12 +25,6 @@ class App extends StatelessWidget{
       ),
       home: WeixinApp(),
       initialRoute: "初始化APP路由",
-      routes: {
-        "/weixin":(BuildContext context)=>WeixinPage(),
-        "/friend":(BuildContext context)=>FriendPage(),
-        "/find":(BuildContext context)=>FindPage(),
-        "/mine":(BuildContext context)=>MinePage()
-      },
     );
   }
 
